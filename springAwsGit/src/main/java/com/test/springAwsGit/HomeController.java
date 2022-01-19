@@ -37,8 +37,11 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test(Model model) {
-		return "test";
+	public String test(Locale locale, Model model) {
+		
+		model.addAttribute("param", "파라미터 전달" );
+		
+		return "test12";
 	}
 	
 }
