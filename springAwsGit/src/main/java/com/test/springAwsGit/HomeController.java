@@ -41,7 +41,7 @@ public class HomeController {
 		
 		model.addAttribute("param", "파라미터 전달" );
 		
-		return "test123";
+		return "test1234";
 	}
 	
 }
